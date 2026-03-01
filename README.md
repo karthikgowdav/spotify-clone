@@ -12,5 +12,5 @@ Responsive Spotify Clone web application built to replicate the core features an
 ## 🛠 Tech Stack
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript 
 
