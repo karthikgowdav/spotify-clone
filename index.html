@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <!-- <img src="logo.svg" alt=""> -->
+
+    <div class="container flex bg-black">
+      <div class="left border bg-grey">
+        <div class="home rounded">
+          <div class="logo"><img src="logo.svg" alt="" /></div>
+          <ul>
+            <li><img class="imvert" src="home.svg" alt="" /> Home</li>
+            <li><img class="imvert" src="search.svg" alt="" /> search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey p-1 ">
+          <div class="heading flex">
+            <img class="invert" src="playlist.svg" alt="" />
+          </div>
+          <h2 class="m-2 ">Your library </h2>
+              <div class="songlist ">
+              <ul>
+             
+              </ul>
+
+              </div>
+        </div>
+          <section class="playlist-creation">
+          
+            <div class="playlist-action">
+              <button class="create-btn">Create playlist</button>
+            </div>
+          </section>
+        <div class="footer m-2">
+        
+        </div>
+      </div>
+
+      <div class="right border">
+        <div class="header"></div>
+        <div class="nav flex border bg-grey">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="currentColor"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M9 17L3 12L9 7L10.4 8.4L6.8 12L10.4 15.6L9 17ZM15 17L13.6 15.6L17.2 12L13.6 8.4L15 7L21 12L15 17Z"
+            />
+          </svg>
+          <div class="button">
+            <button>Sign up</button>
+            <button>Log in</button>
+          </div>
+        </div>
+        <div class="spotifyplaylist">
+          <h1>Spotify playlist</h1>
+          <div class="cardcontainer flex">
+            <!-- Cards will be created here by JavaScript -->
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="songinfo" id="songInfo">No song selected</div>
+          <div class="songbuttons">
+            <img src="prev.svg" alt="" id="prevBtn" class="control-btn" />
+            <img src="play.svg" alt="" id="playBtn" class="control-btn" />
+            <img src="next.svg" alt="" id="nextBtn" class="control-btn" />
+          </div>
+          <div id="progressContainer" class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
